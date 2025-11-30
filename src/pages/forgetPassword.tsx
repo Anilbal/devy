@@ -14,7 +14,7 @@ const ForgotPassword: React.FC = () => {
   if (isSubmitted) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-        <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-md text-center">
+        <div className="bg-white rounded-lg border border-gray-300 p-8 w-full max-w-md text-center">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <svg
               className="w-8 h-8 text-green-600"
@@ -58,7 +58,7 @@ const ForgotPassword: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-md">
+      <div className="bg-white rounded-lg border border-gray-300 p-8 w-full max-w-md">
         <h1 className="text-2xl font-semibold text-gray-900 mb-2">
           Forgot your password?
         </h1>

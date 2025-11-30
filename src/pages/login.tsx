@@ -18,7 +18,7 @@ const Login: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-md">
+      <div className="bg-white rounded-lg border border-gray-300 p-8 w-full max-w-md">
         <h1 className="text-2xl font-semibold text-gray-900 mb-2">
           Login to your account
         </h1>
@@ -60,6 +60,7 @@ const Login: React.FC = () => {
             <input
               type="password"
               id="password"
+              placeholder="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
@@ -77,7 +78,7 @@ const Login: React.FC = () => {
 
         <button
           onClick={handleGoogleLogin}
-          className="w-full bg-white text-gray-900 py-2 px-4 rounded-md border border-gray-300 hover:bg-gray-50 transition-colors mb-4 cursor-pointer"
+          className="w-full bg-white text-gray-900 py-2 px-4 rounded-md border border-gray-300 hover:bg-gray-100 transition-colors mb-4 cursor-pointer"
         >
           Login with Google
         </button>
